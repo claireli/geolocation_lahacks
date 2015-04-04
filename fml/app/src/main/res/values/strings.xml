@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">fml</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnAdd">Add stuff to databass</string>
+    <string name="gen_id">Generate unique ID</string>
+    <string name="btnViewAll">View All Databass Content</string>
+    <string name="btnDelete">Delete shit</string>
+    <string name="lat">Latitude: </string>
+    <string name="lng">Longitude</string>
+    <string name="updateGPS">Update Location</string>
+
+</resources>
