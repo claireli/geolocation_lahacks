@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="false" android:drawable="@drawable/up_level" />
-    <item android:state_pressed="true" android:drawable="@drawable/up_level_pressed" />
-</selector>
-<!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res-file-explorer/drawable/path_up_level.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/path_up_level.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/samples/ConversationSample/build/intermediates/exploded-aar/MoxtraChatSDK/moxtra/unspecified/res/drawable/path_up_level.xml -->

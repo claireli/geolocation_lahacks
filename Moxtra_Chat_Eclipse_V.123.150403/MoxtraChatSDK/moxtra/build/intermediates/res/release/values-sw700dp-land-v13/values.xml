@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/values-sw700dp-land-v13/values.xml -->
-    <eat-comment/>
-    <dimen name="pop_dialog_height">550dp</dimen>
-    <dimen name="pop_dialog_width">360dp</dimen>
-</resources>

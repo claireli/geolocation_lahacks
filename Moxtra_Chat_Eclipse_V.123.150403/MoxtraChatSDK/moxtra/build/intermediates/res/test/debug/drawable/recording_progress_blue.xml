@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rotate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/voice_tag_progress"
-    android:fromDegrees="0"
-    android:pivotX="50%"
-    android:pivotY="50%"
-    android:toDegrees="360" /><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/recording_progress_blue.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/recording_progress_blue.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/build/intermediates/bundles/debug/res/drawable/recording_progress_blue.xml -->

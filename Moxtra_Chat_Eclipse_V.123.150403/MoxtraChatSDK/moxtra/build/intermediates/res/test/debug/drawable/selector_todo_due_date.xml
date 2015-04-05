@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/todo_due_date_disable"/>
-    <item android:state_enabled="true" android:drawable="@drawable/todo_due_date"/>
-</selector><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/selector_todo_due_date.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/selector_todo_due_date.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/build/intermediates/bundles/debug/res/drawable/selector_todo_due_date.xml -->

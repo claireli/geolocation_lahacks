@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/todo_priority" android:state_checked="false" />
-    <item android:drawable="@drawable/todo_priority_finished" android:state_checked="true" android:state_enabled="false" />
-    <item android:drawable="@drawable/todo_priority_selected" android:state_checked="true" />
-    <item android:drawable="@drawable/todo_priority" />
-</selector><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/task_starred_selector.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/task_starred_selector.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/samples/ConversationSample/build/intermediates/exploded-aar/MoxtraChatSDK/moxtra/unspecified/res/drawable/task_starred_selector.xml -->

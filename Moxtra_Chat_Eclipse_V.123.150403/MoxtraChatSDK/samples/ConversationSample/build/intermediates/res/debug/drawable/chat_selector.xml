@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/chat_hold_talk" android:state_pressed="false"/>
-    <item android:drawable="@drawable/chat_hold_talk_highlighted"  android:state_pressed="true"/>
-
-</selector><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/chat_selector.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/chat_selector.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/samples/ConversationSample/build/intermediates/exploded-aar/MoxtraChatSDK/moxtra/unspecified/res/drawable/chat_selector.xml -->
