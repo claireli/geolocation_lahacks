@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Claire\LAHacks_2015\Found\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\Claire\LAHacks_2015\Found\app\build\intermediates\pre-dexed\debug\volley-82974e5805b19305ad909e2a465187046936d9db.jar" />
+    </item>
+    <item
         jar="C:\Users\Claire\LAHacks_2015\Found\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"

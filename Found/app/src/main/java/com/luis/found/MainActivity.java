@@ -72,4 +72,11 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public ViewPager getViewPager() {
+        if (null == mViewPager) {
+            mViewPager = (ViewPager) findViewById(R.id.pager);
+        }
+        return mViewPager;
+    }
 }

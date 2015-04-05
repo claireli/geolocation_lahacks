@@ -6,6 +6,9 @@
         android:name=".ManualActivity"
         android:label="@string/title_activity_manual" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -42,7 +45,10 @@
             android:name=".Submit_Activity"
             android:label="@string/title_activity_submit_" >
         </activity>
-
+        <activity
+            android:name=".Geodata"
+            android:label="@string/title_activity_geodata" >
+        </activity>
     </application>
 
 </manifest>

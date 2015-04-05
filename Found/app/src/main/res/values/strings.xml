@@ -23,4 +23,13 @@
     <string name="title_activity_coord_">Coord_Activity</string>
     <string name="title_activity_submit_">Submit_Activity</string>
     <string name="Send">Send To Friend</string>
+    <string name="Gen">Generate Coordinates</string>
+    <string name="Save_Later">Save For Later</string>
+    <string name="Ret">Return</string>
+    <string name="lat">Latitude,</string>
+    <string name="lng">Longitude</string>
+    <string name="title_activity_geodata">Geodata</string>
+
+
+
 </resources>

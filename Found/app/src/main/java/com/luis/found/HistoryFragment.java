@@ -40,12 +40,8 @@ public class HistoryFragment extends Fragment {
         {
             @Override
             public void onClick(View v)
-            { //FIX ME !!!!
-                Fragment fragment = new CameraFragment();
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.pager, fragment)
-                        .commit();
+            {
+                ((MainActivity)getActivity()).getViewPager().setCurrentItem(1);
             }
         });
 
@@ -79,7 +75,8 @@ public class HistoryFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                clairetoast("history of stuff");
+                Intent myIntent = new Intent(getActivity(), Geodata.class);
+                getActivity().startActivity(myIntent);
             }
         });
 

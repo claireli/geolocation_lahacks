@@ -1,39 +1,24 @@
 package com.luis.found;
 
-import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
 
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
-import javax.net.ssl.HttpsURLConnection;
-
-import android.net.Uri.Builder;
-import java.net.URL;
-import java.io.*;
-import org.apache.http.client.HttpClient;
-
-public class Submit_Activity extends ActionBarActivity {
+public class Geodata extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_submit_);
+        setContentView(R.layout.activity_geodata);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_submit_, menu);
+        getMenuInflater().inflate(R.menu.menu_geodata, menu);
         return true;
     }
 
@@ -51,8 +36,4 @@ public class Submit_Activity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 }
