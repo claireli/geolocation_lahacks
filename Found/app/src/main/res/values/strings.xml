@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Found</string>
+    <string name="app_name">Foundet.</string>
 
 
     <string name="title_section1">Section 1</string>
@@ -22,13 +22,15 @@
     <string name="title_activity_manual">ManualActivity</string>
     <string name="title_activity_coord_">Coord_Activity</string>
     <string name="title_activity_submit_">Submit_Activity</string>
-    <string name="Send">Send To Friend</string>
+    <string name="Send">Send To Friend (Coordinates Only)</string>
+    <string name="Send_Pic">Send To Friend (With Photo)</string>
     <string name="Gen">Generate Coordinates</string>
     <string name="Save_Later">Save For Later</string>
     <string name="Ret">Return</string>
     <string name="lat">Latitude,</string>
     <string name="lng">Longitude</string>
     <string name="title_activity_geodata">Geodata</string>
+    <string name="text">Would you like to attach a photo too?</string>
 
 
 

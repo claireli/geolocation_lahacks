@@ -32,7 +32,8 @@
         android:layout_height="40dp"
         android:layout_above="@+id/Save_Later"
         android:layout_alignLeft="@+id/Save_Later"
-        android:layout_alignStart="@+id/Save_Later" />
+        android:layout_alignStart="@+id/Save_Later"
+        android:background="#66CCCC" />
 
     <Button android:id="@+id/Gen"
         android:text="@string/Gen"
@@ -40,8 +41,10 @@
         android:layout_y="200dp"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/Send"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/Send_Pic"
+        android:layout_alignLeft="@+id/Send_Pic"
+        android:layout_alignStart="@+id/Send_Pic"
+        android:background="#8FD8D8" />
 
     <Button android:id="@+id/Save_Later"
         android:text="@string/Save_Later"
@@ -49,10 +52,20 @@
         android:layout_y="200dp"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="26dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:background="#ADEAEA" />
 
+    <Button android:id="@+id/Send_Pic"
+        android:text="@string/Send_Pic"
+        android:layout_x="30dp"
+        android:layout_y="200dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Send"
+        android:layout_alignLeft="@+id/Send"
+        android:layout_alignStart="@+id/Send"
+        android:background="#D1EEEE" />
 
 
 

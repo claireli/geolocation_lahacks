@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v4.app.Fragment;
 import android.content.Context;
@@ -39,16 +40,8 @@ public class CameraFragment extends Fragment{
     private Context myContext;
     private LinearLayout cameraPreview;
     private boolean cameraFront = false;
-/*
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getActivity().setContentView(R.layout.photo_fragment);
-        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        myContext = this.getActivity();
-        initialize();
-    }
-*/
+    private String save_name;
+    public Toast clairetoast;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,8 +55,8 @@ public class CameraFragment extends Fragment{
         capture = (Button) rootView.findViewById(R.id.button_capture);
         capture.setOnClickListener(captureListener);
 
-        switchCamera = (Button) rootView.findViewById(R.id.button_ChangeCamera);
-        switchCamera.setOnClickListener(switchCameraListener);
+        //switchCamera = (Button) rootView.findViewById(R.id.button_ChangeCamera);
+        //switchCamera.setOnClickListener(switchCameraListener);
         return rootView;
     }
 
@@ -192,6 +185,15 @@ public class CameraFragment extends Fragment{
             public void onPictureTaken(byte[] data, Camera camera) {
                 //make a new picture file
                 File pictureFile = getOutputMediaFile();
+                //pass the shit
+                String save_name = pictureFile.getName();
+
+                clairetoast(save_name);
+                Intent intent = new Intent(getActivity().getBaseContext(),
+                        Coord_Activity.class);
+                intent.putExtra("message", save_name);
+                getActivity().startActivity(intent);
+
 
                 if (pictureFile == null) {
                     return;
@@ -241,6 +243,9 @@ public class CameraFragment extends Fragment{
         //and make a media file:
         mediaFile = new File(mediaStorageDir.getPath() + File.separator + "IMG_" + timeStamp + ".jpg");
 
+        //query db here
+        //save_name, longitude, and latitude
+
         return mediaFile;
     }
 
@@ -250,6 +255,17 @@ public class CameraFragment extends Fragment{
             mCamera.release();
             mCamera = null;
         }
+    }
+
+    public void clairetoast(String message){
+
+
+        clairetoast = Toast.makeText(this.getActivity(),
+                message,
+                Toast.LENGTH_SHORT);
+
+        clairetoast.show();
+
     }
 
 }

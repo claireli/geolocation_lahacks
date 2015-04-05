@@ -10,6 +10,7 @@ import android.hardware.Camera;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.util.Log;
+import android.widget.Toast;
 
 
 /** A basic Camera preview class */
@@ -17,6 +18,7 @@ import android.util.Log;
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
     private SurfaceHolder mHolder;
     private Camera mCamera;
+
 
     public CameraPreview(Context context, Camera camera) {
         super(context);
@@ -81,4 +83,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         //mCamera.release();
 
     }
+
+
 }

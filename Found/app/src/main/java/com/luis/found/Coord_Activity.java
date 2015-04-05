@@ -4,8 +4,10 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,8 +30,10 @@ import android.widget.TextView;
 import android.location.LocationListener;
 import android.widget.Toast;
 
+import java.io.File;
+
 public class Coord_Activity extends ActionBarActivity implements View.OnClickListener, LocationListener {
-    Button Send, Gen, Save_Later, Ret;
+    Button Send, Send_Pic, Gen, Save_Later, Ret;
     SQLiteDatabase db;
     Button btnAdd, btnViewAll, btnDelete, updateGPS;
     LocationManager lm;
@@ -38,6 +42,7 @@ public class Coord_Activity extends ActionBarActivity implements View.OnClickLis
     Location l;
     LocationListener locationListener;
     Toast clairetoast;
+
 
     //Overriding location class methods and shiz
     @Override
@@ -83,6 +88,9 @@ public class Coord_Activity extends ActionBarActivity implements View.OnClickLis
         //Send to a friend
         Send=(Button)findViewById(R.id.Send);
         Send.setOnClickListener(this);
+
+        Send_Pic=(Button)findViewById(R.id.Send_Pic);
+        Send_Pic.setOnClickListener(this);
 
         //Return Button
 
@@ -166,15 +174,25 @@ public class Coord_Activity extends ActionBarActivity implements View.OnClickLis
         }
 
     }
+    public File getNewestFileInDirectory() {
+        File newestFile = null;
 
+        // start loop trough files in directory
+        File file = new File("/storage/emulated/0/JCG Camera/");
+
+
+        // end loop trough files in directory
+
+        return newestFile;
+    }
     public void onClick(View view)
     {
-        if(view==btnAdd)
+        if(view==Save_Later)
         {
             double lng=l.getLongitude();
             double lat=l.getLatitude();
             db.execSQL("INSERT INTO student VALUES("+lat+", "+lng+");");
-            showMessage("Success", "Record added");
+            showMessage("Success", "Saved into Geo Database");
             //clearText();
         }
         if(view==btnViewAll)
@@ -241,9 +259,41 @@ public class Coord_Activity extends ActionBarActivity implements View.OnClickLis
 
         }
 
-        if (view == Send) {
-            Intent myIntent = new Intent(this, Submit_Activity.class);
-            startActivity(myIntent);
+        if(view==Send_Pic){
+
+                //Intent myIntent = new Intent(this, Submit_Activity.class);
+                //startActivity(myIntent);
+            double lng=l.getLongitude();
+            double lat=l.getLatitude();
+
+            String chunk1="http://maps.google.com/maps?q=";
+            String chunk3=",";
+            Intent sendIntent = new Intent(Intent.ACTION_SEND);
+            sendIntent.setData(Uri.parse("sms:"));
+            //String finalname="IMG_20150405_090454.jpg";
+            Intent intent = getIntent();
+            String finalname= intent.getStringExtra("message");
+
+            clairetoast(finalname);
+
+            sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File("/storage/emulated/0/JCG Camera/"+finalname)));
+            sendIntent.setType("image/jpg");
+            sendIntent.putExtra("sms_body", chunk1 + lat + chunk3 + lng);
+            startActivity(Intent.createChooser(sendIntent,"Send"));
+        }
+        if(view==Send){
+
+            //Intent myIntent = new Intent(this, Submit_Activity.class);
+            //startActivity(myIntent);
+            double lng=l.getLongitude();
+            double lat=l.getLatitude();
+
+            String chunk1="http://maps.google.com/maps?q=";
+            String chunk3=",";
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"));
+            sendIntent.putExtra("sms_body", chunk1 + lat + chunk3 + lng);
+            startActivity(sendIntent);
         }
 
 
