@@ -1,5 +1,6 @@
 package com.claire.fml;
 
+import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -113,7 +114,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             }
         }
 
-        lm.requestLocationUpdates(provider, 0, 1, locationListener);
+        lm.requestLocationUpdates(provider, 0, 1, this);
 
 
     }
@@ -123,12 +124,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             public void onLocationChanged(Location locFromGps) {
                 // called when the listener is notified with a location update from the GPS
                 //showMessage("Listener", "Location Updated");
-                clairetoast("Wh00t location updater mutherfucker yeah! ");
+                double lng=locFromGps.getLongitude();
+                double lat=locFromGps.getLatitude();
+                clairetoast(lat + ", " + lng);
                 //ln.setText("boner");
-                double lng=l.getLongitude();
-                double lat=l.getLatitude();
+                l=locFromGps;
                 //display on text view
-                ln.setText(""+lng);
+                ln.setText("hi"+lng);
                 lt.setText(""+lat);
             }
             @Override
@@ -145,6 +147,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             public void onStatusChanged(String provider, int status, Bundle extras) {
                 // called when the status of the GPS provider changes
             }
+
         }
 
         public void onClick(View view)
