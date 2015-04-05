@@ -12,6 +12,7 @@
         android:name="com.luis.found.ManualActivity"
         android:label="@string/title_activity_manual" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -38,6 +39,14 @@
         <activity
             android:name="com.luis.found.ManualActivity"
             android:label="@string/title_activity_manual" >
+        </activity>
+        <activity
+            android:name="com.luis.found.Coord_Activity"
+            android:label="@string/title_activity_coord_" >
+        </activity>
+        <activity
+            android:name="com.luis.found.Submit_Activity"
+            android:label="@string/title_activity_submit_" >
         </activity>
     </application>
 

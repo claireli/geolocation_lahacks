@@ -151,6 +151,11 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/C:/Users/Claire/LAHacks_2015/Found/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Send">Send To Friend</string>
+    <!-- From: file:/C:/Users/Claire/LAHacks_2015/Found/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -182,7 +187,9 @@
     <string name="history_fragment">I am the history fragment!</string>
     <string name="manual">Manually Enter Address</string>
     <string name="photo_fragment">I am the photo fragment!</string>
+    <string name="title_activity_coord_">Coord_Activity</string>
     <string name="title_activity_manual">ManualActivity</string>
+    <string name="title_activity_submit_">Submit_Activity</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -194,6 +201,7 @@
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
     </style>
     <!-- From: file:/C:/Users/Claire/LAHacks_2015/Found/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>

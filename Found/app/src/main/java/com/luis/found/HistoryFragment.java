@@ -55,7 +55,10 @@ public class HistoryFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                clairetoast("capture GPS coordinates");
+
+                  Intent myIntent = new Intent(getActivity(), Coord_Activity.class);
+                  getActivity().startActivity(myIntent);
+
             }
         });
 

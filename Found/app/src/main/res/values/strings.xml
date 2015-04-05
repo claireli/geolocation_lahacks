@@ -20,4 +20,7 @@
     <string name="history">Geohistory</string>
     <string name="account">My Account</string>
     <string name="title_activity_manual">ManualActivity</string>
+    <string name="title_activity_coord_">Coord_Activity</string>
+    <string name="title_activity_submit_">Submit_Activity</string>
+    <string name="Send">Send To Friend</string>
 </resources>
