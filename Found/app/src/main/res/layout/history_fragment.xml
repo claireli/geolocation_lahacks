@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_frame"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView android:text="@string/history_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent"
+    android:clickable="true">
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+
+
+    <Button android:id="@+id/capture"
+        android:text="@string/capture"
+        android:layout_x="30dp"
+        android:layout_y="200dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:color="#1E669B"
+        android:background="#AEEEEE"
+        android:layout_above="@+id/manual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp" />
+
+    <Button android:id="@+id/manual"
+        android:text="@string/manual"
+        android:layout_x="30dp"
+        android:layout_y="200dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/coord"
+        android:layout_alignLeft="@+id/coord"
+        android:layout_alignStart="@+id/coord"
+        android:layout_marginBottom="28dp"
+        android:background="#8FD8D8" />
+
+
+    <Button android:id="@+id/coord"
+        android:text="@string/coord"
+        android:layout_x="30dp"
+        android:layout_y="400dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/history"
+        android:layout_alignLeft="@+id/history"
+        android:layout_alignStart="@+id/history"
+        android:layout_marginBottom="32dp"
+        android:background="#66CCCC" />
+
+    <Button android:id="@+id/history"
+        android:text="@string/history"
+        android:layout_x="30dp"
+        android:layout_y="600dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#ADEAEA"
+        android:layout_above="@+id/account"
+        android:layout_alignLeft="@+id/account"
+        android:layout_alignStart="@+id/account"
+        android:layout_marginBottom="33dp" />
+
+    <Button android:id="@+id/account"
+        android:text="@string/account"
+        android:layout_x="30dp"
+        android:layout_y="600dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/capture"
+        android:layout_alignStart="@+id/capture"
+        android:layout_marginBottom="63dp"
+        android:background="#D1EEEE" />
+
+
 </RelativeLayout>

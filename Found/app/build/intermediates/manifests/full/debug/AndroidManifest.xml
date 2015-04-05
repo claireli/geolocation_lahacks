@@ -8,6 +8,10 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="22" />
 
+    <activity
+        android:name="com.luis.found.ManualActivity"
+        android:label="@string/title_activity_manual" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -30,6 +34,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.luis.found.ManualActivity"
+            android:label="@string/title_activity_manual" >
         </activity>
     </application>
 
