@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/liveshare_screenshare_on"></item>
+    <item android:drawable="@drawable/liveshare_screenshare"></item>
+</selector><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/stateful_liveshare_screenshare.xml -->

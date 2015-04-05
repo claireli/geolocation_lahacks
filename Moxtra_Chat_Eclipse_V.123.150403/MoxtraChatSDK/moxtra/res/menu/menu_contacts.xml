@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_open_profile"
+        android:title="@string/Profile" />
+
+    <item
+        android:id="@+id/menu_delete"
+        android:title="@string/Delete" />
+</menu><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/menu/menu_contacts.xml -->

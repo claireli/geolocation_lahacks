@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/story_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/story_slide_tiled_bg">
+
+        <TextView
+            style="@style/MXStoryPageTitle"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Team_Messaging" />
+
+        <ImageView
+            android:id="@+id/story1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/story1" />
+
+        <TextView
+            style="@style/MXStoryPageSubtitle"
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/story1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Mobile_and_web_messaging_keeps_your_team_in_sync" />
+
+    </RelativeLayout>
+</FrameLayout>
+<!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/layout/layout_story_page1.xml -->

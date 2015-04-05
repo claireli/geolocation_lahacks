@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/et_search"
+    style="@style/MXSearchBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:ems="10"
+    android:hint="@string/Search"
+    android:minHeight="40dp"
+    android:singleLine="true"
+    android:inputType="text|textCapSentences"
+    android:textColor="@android:color/black" />
+<!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/layout/search_box.xml -->

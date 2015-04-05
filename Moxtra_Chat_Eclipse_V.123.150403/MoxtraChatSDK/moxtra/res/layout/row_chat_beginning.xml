@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        style="@style/MXChatBeginning"
+        android:background="@drawable/squarebubble_gray"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_edit"
+            android:minLines="3"
+            android:text="@string/This_is_the_beginning_of_the_binder"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/tv_description"
+            android:id="@+id/separator"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_alignRight="@id/separator"
+            android:layout_above="@id/separator"
+            android:src="@drawable/binder_topic_edit" />
+
+        <TextView
+            android:id="@+id/tv_add_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:text="@string/Add_Team_Members"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/moxtra_blue" />
+    </RelativeLayout>
+
+</FrameLayout>
+<!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/layout/row_chat_beginning.xml -->

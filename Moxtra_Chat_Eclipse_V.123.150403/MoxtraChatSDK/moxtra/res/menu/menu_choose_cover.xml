@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_choose_photo"
+        android:title="@string/Choose_Photo" />
+
+    <item
+        android:id="@+id/menu_choose_from_other_binder"
+        android:title="@string/Binder_Page" />
+</menu><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/menu/menu_choose_cover.xml -->

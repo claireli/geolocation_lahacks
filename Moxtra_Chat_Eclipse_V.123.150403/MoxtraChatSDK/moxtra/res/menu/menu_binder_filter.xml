@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_all_binders"
+            android:title="@string/All_Binders" />
+        <item
+            android:id="@+id/menu_favorites"
+            android:title="@string/Favorites" />
+        <item
+            android:id="@+id/menu_unread"
+            android:title="@string/Unread" />
+    </group>
+</menu><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/menu/menu_binder_filter.xml -->

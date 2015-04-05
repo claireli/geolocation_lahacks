@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/annotation_undo_button_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/annotation_undo_button"/>
+
+</selector>
+<!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/stateful_tool_undo.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/drawable/stateful_tool_undo.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/build/intermediates/bundles/debug/res/drawable/stateful_tool_undo.xml -->

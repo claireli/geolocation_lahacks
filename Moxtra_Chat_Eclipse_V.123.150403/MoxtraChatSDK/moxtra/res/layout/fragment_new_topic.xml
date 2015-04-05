@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_tiled_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="center">
+
+                <com.moxtra.binder.widget.RoundedImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_cover_placeholder"
+                    android:layout_alignLeft="@+id/btn_cover_placeholder"
+                    android:layout_alignRight="@+id/btn_cover_placeholder"
+                    android:layout_alignTop="@+id/btn_cover_placeholder"
+                    android:src="@drawable/default_binder_cover"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    mx:border_color="@android:color/white"
+                    mx:border_width="0dip"
+                    mx:corner_radius="5dp"
+                    mx:round_background="true" />
+
+                <ImageButton
+                    android:id="@+id/btn_cover_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:src="@drawable/addnew_cover_placeholder" />
+
+                <TextView
+                    android:id="@+id/label_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_cover_placeholder"
+                    android:layout_alignLeft="@+id/btn_cover_placeholder"
+                    android:layout_alignRight="@+id/btn_cover_placeholder"
+                    android:layout_margin="6dp"
+                    android:maxLines="6"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_change_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_below="@+id/btn_cover_placeholder"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:textColor="@color/moxtra_darkgray"
+                    android:text="@string/Change_Cover_Image" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:inputType="textCapSentences"
+            android:hint="@string/Tap_to_add_a_topic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Binder_Topic"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+</ScrollView><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/layout/fragment_new_topic.xml -->

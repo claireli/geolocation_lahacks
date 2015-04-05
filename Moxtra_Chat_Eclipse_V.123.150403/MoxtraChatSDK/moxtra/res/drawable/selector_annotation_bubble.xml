@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/annotation_text_speech_bubble_selected" android:state_checked="true" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/annotation_text_speech_bubble" android:state_checked="false"></item>
+</selector><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/drawable/selector_annotation_bubble.xml -->

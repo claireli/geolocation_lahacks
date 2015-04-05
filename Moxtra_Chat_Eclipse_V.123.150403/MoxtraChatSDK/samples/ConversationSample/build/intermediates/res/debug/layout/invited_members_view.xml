@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.moxtra.binder.contacts.InvitedMembersView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/action_bar_height"
+    android:orientation="vertical" /><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/layout/invited_members_view.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/moxtra/res/layout/invited_members_view.xml --><!-- From: file:/D:/Luis/Moxtra_Chat_Eclipse/Moxtra_Chat_Eclipse_V.123.150403/MoxtraChatSDK/samples/ConversationSample/build/intermediates/exploded-aar/MoxtraChatSDK/moxtra/unspecified/res/layout/invited_members_view.xml -->

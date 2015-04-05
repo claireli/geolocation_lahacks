@@ -1,0 +1,1 @@
+D:\Luis\Moxtra_Chat_Eclipse\Moxtra_Chat_Eclipse_V.123.150403\MoxtraChatSDK\samples\ConversationSample\build\intermediates\multi-dex\debug\allclasses.jar

@@ -1,0 +1,10 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/meet_sdk_toolbar_screen_sharing_on"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/meet_sdk_toolbar_screen_sharing"
+        android:duration="400" />
+
+</animation-list><!-- From: file:/D:/workspace/SDK/ChatSDK/resources/res/anim/meet_sdk_screen_sharing.xml -->

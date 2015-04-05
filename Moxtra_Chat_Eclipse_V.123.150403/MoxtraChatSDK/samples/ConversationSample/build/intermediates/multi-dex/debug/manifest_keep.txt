@@ -1,0 +1,26 @@
+-keep class com.example.conversationsdk.MoxtraApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.example.conversationsdk.MainActivity { <init>(); }
+-keep class com.example.conversationsdk.LoginActivity { <init>(); }
+-keep class com.moxtra.binder.conversation.MXConversationActivity { <init>(); }
+-keep class com.moxtra.binder.pageview.PageViewActivity { <init>(); }
+-keep class com.moxtra.binder.service.AudioPlayerService { <init>(); }
+-keep class com.moxtra.binder.livemeet.LiveMeetActivity { <init>(); }
+-keep class com.moxtra.binder.activity.MXStackActivity { <init>(); }
+-keep class com.moxtra.binder.member.MXInviteActivity { <init>(); }
+-keep class com.moxtra.binder.multiimagepicker.MultiImagePickerActivity { <init>(); }
+-keep class com.moxtra.binder.util.MXAlertDialog { <init>(); }
+-keep class com.moxtra.sdk.MXRemoteNotificationActivity { <init>(); }
+-keep class com.moxtra.binder.service.BootCompletedIntentReceiver { <init>(); }
+-keep class com.moxtra.binder.service.MXRemoteNotificationService { <init>(); }
+-keep class com.moxtra.binder.service.RingService { <init>(); }
+-keep class com.moxtra.binder.service.MeetService { <init>(); }
+-keep class com.example.conversationsdk.InviteToGroupChatActivity { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
